@@ -1,0 +1,67 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MapsActivity">
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        tools:context="edu.nasredine.cheniki.geolocalisation.MapsActivity" />
+
+    <TextView
+        android:id="@+id/location_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignRight="@+id/searchView1"
+        android:background="#ff058fff"
+        android:gravity="bottom"
+        android:paddingBottom="5dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingTop="5dp"
+        android:textColor="#ffffffff" />
+
+    <Button
+        android:id="@+id/btn_select"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+
+        android:layout_alignBaseline="@+id/location_text_view"
+        android:layout_alignBottom="@+id/location_text_view"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:text="selectionner" />
+
+    <EditText
+        android:id="@+id/searchView1"
+        android:layout_width="250dp"
+        android:layout_height="34dp"
+        android:layout_alignParentLeft="false"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="14dp"
+        android:background="@android:color/white"
+        android:elevation="4dp"
+        android:hint="Search Location"
+        android:textColor="@android:color/black"></EditText>
+
+    <Button
+        android:id="@+id/btn_search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginLeft="270dp"
+        android:layout_marginRight="1dp"
+        android:layout_marginTop="7dp"
+        android:text="search" />
+
+</RelativeLayout>
